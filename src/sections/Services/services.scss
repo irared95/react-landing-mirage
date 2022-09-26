@@ -1,0 +1,78 @@
+@import 'src/styles/utils/variable';
+@import 'src/styles/utils/fonts';
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 180px;
+
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 58px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__item {
+        position: relative;
+        background-color: $light-pink;
+        margin-right: 30px;
+        border-radius: 8px;
+        padding: 52px 9px 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: calc(26% - 30px);
+        &:last-child {
+            margin-right: 0;
+        }
+        &-title {
+            margin-bottom: 15px;
+            white-space: nowrap;
+        }
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 42px;
+        }
+        &-text {
+            margin-bottom: 20px;
+        }
+        &-button {
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+            background-color: $light-pink;
+            border-radius: 0 0 8px 8px;
+            transition: bottom .2s linear;
+        }
+        &:hover {
+            background-color: $pink;
+            .typography-title4,
+            .typography-text {
+                color: $white;
+            }
+            .services__item-button {
+                bottom: -34px;
+                background-color: $pink;
+                visibility: visible;
+            }
+            path {
+                fill: $white;
+            }
+        }
+    }
+}

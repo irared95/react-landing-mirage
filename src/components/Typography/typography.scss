@@ -1,0 +1,31 @@
+@import 'src/styles/utils/variable';
+@import 'src/styles/utils/fonts';
+
+.typography {
+  &-title2 {
+    font-family: $circularstd-medium;
+    font-size: 28px;
+    line-height: 30px;
+    color: $pink;
+  }
+  &-title3 {
+    font-family: $circularstd-bold;
+    font-size: 52px;
+    line-height: 60px;
+    color: $blue;
+  }
+  &-title4{
+    font-family: $circularstd-bold;
+    font-size: 34px;
+    line-height: 38px;
+    color: $blue;
+  }
+
+  &-text {
+    display: inline-block;
+    font-family: $proximanova-regular;
+    font-size: 18px;
+    line-height: 28px;
+    color: $grey;
+  }
+}

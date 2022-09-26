@@ -1,0 +1,25 @@
+.about{
+  margin-bottom: 150px;
+  &__wrapper{
+    display: flex;
+  }
+  &__illustration,
+  &__content{
+    width: 50%;
+  }
+  &__content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 75px;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 30px;
+  }
+  &__text{
+    margin-bottom: 40px;
+  }
+}

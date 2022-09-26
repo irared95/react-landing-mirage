@@ -1,0 +1,11 @@
+@import './src/styles/utils/variable';
+@import './src/styles/utils/reset';
+@import './src/styles/utils/my-normalize';
+@import './src/styles/utils/fonts';
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  width: 100%;
+}
