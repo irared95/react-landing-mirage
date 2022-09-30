@@ -3,8 +3,14 @@ import './about.scss'
 import Typography from '../../components/Typography';
 import Button from "../../components/Button";
 import Image from "../../components/Image";
+import Slider from "../../components/Slider";
+import AboutSlide from "./AboutSlide";
 
-const About = ({subtitle, title, text, image, buttonText, reverse}) =>{
+const About = ({subtitle, title, text, image, buttonText, reverse, slides}) => {
+    console.log('slides', slides)
+
+    const listSlides = slides && slides.map(({text, author, address}) => <AboutSlide text={text} author={author} address={address} /> )
+
     return (
         <section className={'about'}>
             <div className={'container'}>
@@ -21,10 +27,11 @@ const About = ({subtitle, title, text, image, buttonText, reverse}) =>{
                         {title && <div className={'about__title'}>
                             <Typography variant={'title3'}>{title}</Typography>
                         </div>}
-                        <div className={'about__text'}>
+                        {text && <div className={'about__text'}>
                             <Typography variant={'text'}>{text}</Typography>
-                        </div>
-                        {buttonText && <Button variant={'contained'} icon={'arrow'} iconWidth={'25px'} iconHeight={'25px'} reverse>{buttonText}</Button>}
+                        </div>}
+                        {slides && <div><Slider slides={listSlides}/></div>}
+                        {buttonText && <Button variant={'contained'} icon={'arrow'} iconWidth={'25px'} iconHeight={'25px'}>{buttonText}</Button>}
                     </div>
                 </div>
             </div>
