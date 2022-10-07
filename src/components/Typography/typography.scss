@@ -28,4 +28,12 @@
     line-height: 28px;
     color: $grey;
   }
+
+  &-error {
+    display: inline-block;
+    font-family: $proximanova-regular;
+    font-size: 18px;
+    line-height: 28px;
+    color: $red;
+  }
 }

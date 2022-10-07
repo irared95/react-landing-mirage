@@ -2,6 +2,7 @@ import React from 'react';
 import Services from "./sections/Services";
 import AboutContainer from "./sections/About/AboutContainer";
 import Partners from "./sections/Partners";
+import Subscribe from "./sections/Subscribe";
 
 const App = () => {
     return (
@@ -9,6 +10,7 @@ const App = () => {
             <Services/>
             <AboutContainer/>
             <Partners/>
+            <Subscribe/>
         </>
     );
 };

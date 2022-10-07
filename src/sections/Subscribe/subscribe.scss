@@ -1,0 +1,54 @@
+@import '../../styles/utils/variable';
+
+.subscribe{
+  padding: 60px 0 100px;
+  .container {
+    max-width: 1440px;
+  }
+  &__wrap {
+    background-image: url('../../assets/images/mail-Illustration.svg'), url('../../assets/images/bloob-1.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top -10px, right;
+  }
+  &__wrapper{
+    max-width: 542px;
+    margin: 0 auto;
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__text{
+    margin-bottom: 50px;
+  }
+  &__former {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  &__form{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 2px solid $white;
+    padding: 8px 8px 8px 25px;
+    border-radius: 4px;
+    background-color: $white;
+    color: $grey;
+    filter: drop-shadow(20px 20px 40px rgba(205, 205, 205, 0.25));
+  }
+  &__input{
+    width: 100%;
+    padding: 0 15px;
+    font-family: $proximanova-regular;
+    color: $grey;
+    font-size: 18px;
+    line-height: 20px;
+    transition: all 0.3s linear;
+    &::placeholder{
+      color: $grey;
+    }
+  }
+  &__errors {
+    position: absolute;
+  }
+}

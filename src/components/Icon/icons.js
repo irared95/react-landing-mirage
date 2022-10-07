@@ -6,6 +6,7 @@ import { ReactComponent as ArrowRight } from "../../assets/icons/arrow-right.svg
 import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
 import { ReactComponent as SimpleArrowRight } from "../../assets/icons/simple-arrow-right.svg";
 import { ReactComponent as SimpleArrowLeft } from "../../assets/icons/simple-arrow-left.svg";
+import { ReactComponent as Mail } from "../../assets/icons/mail.svg";
 
 export const icons = {
     branding: Branding,
@@ -16,4 +17,5 @@ export const icons = {
     arrow: Arrow,
     simpleArrowRight: SimpleArrowRight,
     simpleArrowLeft: SimpleArrowLeft,
+    mail: Mail,
 }
