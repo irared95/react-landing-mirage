@@ -1,0 +1,77 @@
+@import 'src/styles/utils/variable';
+@import 'src/styles/utils/fonts';
+
+.footer{
+  padding-top: 200px;
+  background-image: url("../../assets/images/wave2.svg"), url("../../assets/images/wave1.svg");
+  background-repeat: no-repeat;
+  background-position: top 100px center, bottom -6px center;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+  }
+  &__bottom{
+    background-color: $pink;
+    &-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+  }
+  &__select{
+    display: flex;
+    align-items: center;
+    select{
+      background-image: url("../../assets/icons/select-arrow.svg");
+      background-position: right;
+      background-repeat: no-repeat;
+      padding-right: 14px;
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      font-family: $circularstd-medium;
+      font-size: 14px;
+      line-height: 16px;
+      color: $white;
+    }
+    &-icon{
+      margin-right: 13px;
+    }
+  }
+  &-info{
+    &__logo{
+      margin-bottom: 40px;
+    }
+    &__address{
+      margin-bottom: 35px;
+      p {
+        margin-bottom: 8px;
+      }
+    }
+    &__title{
+      margin-bottom: 20px;
+    }
+    &__list{
+      display: flex;
+    }
+    &__item{
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  &-menu{
+    &__head{
+      margin-bottom: 40px;
+    }
+    &__item{
+      margin-bottom: 32px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

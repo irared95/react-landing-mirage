@@ -20,6 +20,20 @@
     line-height: 38px;
     color: $blue;
   }
+  &-title5{
+    font-family: $circularstd-medium;
+    font-size: 24px;
+    line-height: 26px;
+    color: $blue;
+    letter-spacing: 0.2px;
+  }
+  &-title6{
+    font-family: $proximanova-bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: $grey;
+    letter-spacing: 0.2px;
+  }
 
   &-text {
     display: inline-block;
@@ -27,6 +41,24 @@
     font-size: 18px;
     line-height: 28px;
     color: $grey;
+  }
+
+  &-text1 {
+    display: inline-block;
+    font-family: $proximanova-regular;
+    font-size: 20px;
+    line-height: 22px;
+    color: $grey;
+    letter-spacing: 0.2px;
+  }
+
+  &-text2 {
+    display: inline-block;
+    font-family: $proximanova-regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: $white;
+    letter-spacing: 0.2px;
   }
 
   &-error {

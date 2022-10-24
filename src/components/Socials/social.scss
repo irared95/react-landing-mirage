@@ -1,0 +1,20 @@
+@import 'src/styles/utils/variable';
+@import 'src/styles/utils/fonts';
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $white;
+  box-shadow: 10px 10px 59px -4px rgba(0,0,0,0.30);
+  svg{
+    transition: all 0.2s linear;
+  }
+  &:hover{
+    svg{
+      fill: $pink;
+    }
+  }
+}

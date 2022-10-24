@@ -5,8 +5,13 @@ const variantToTag = {
     'title2': 'h2',
     'title3': 'h3',
     'title4': 'h4',
+    'title5': 'h5',
+    'title6': 'h6',
     'text' : 'span',
-    'error' : 'span'
+    'text1' : 'span',
+    'text2' : 'span',
+    'error' : 'span',
+
 }
 
 //variant -> title, subtitle

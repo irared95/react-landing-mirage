@@ -5,6 +5,13 @@
   font-display: swap;
   src: url('../../assets/fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2'), url('../../assets/fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'), url('../../assets/fonts/ProximaNova/ProximaNova-Regular.ttf') format('ttf');
 }
+@font-face {
+  font-family: 'ProximaNova Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../assets/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'), url('../../assets/fonts/ProximaNova/ProximaNova-Bold.ttf') format('ttf');
+}
 
 @font-face {
   font-family: 'CircularStd Medium';
